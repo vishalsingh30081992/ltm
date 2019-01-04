@@ -1,0 +1,18 @@
+.cost-struct-container {
+    background: #007b5e;
+    .top-section {
+        .header-container {
+            .navigation-tabs {
+                .bottom-section {
+                    .list-table {
+                        padding: 0 15px;
+                    }
+                    .table td, .table th {
+                        font-size: 12px;
+                        border-bottom: 1px solid #dee2e6;
+                    }
+                }
+            }
+        }
+    }
+}

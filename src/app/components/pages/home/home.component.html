@@ -1,0 +1,1231 @@
+<div class="home-container page-container">
+  <div class="row top-section">
+    <div class="col-12 header-container">
+      <div class="navigation-tabs">
+        <ngb-tabset #t="ngbTabset">
+          <ngb-tab title="List" id="list_tab">
+            <ng-template ngbTabContent>
+              <div class="row button-section">
+                <div class="col-12">
+                  <div class="add-delete">
+                    <button type="button" class="btn btn-success">Add</button>
+                    <button type="button" class="btn btn-warning btn-delete">Delete</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row middle-section">
+                <div class="col-12">
+                  <div class="client-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Client Name</th>
+                          <th scope="col">Contract Name</th>
+                          <th scope="col">Date Type</th>
+                          <th scope="col">Date Range</th>
+                          <th scope="col">Measure Group</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Client AAA</th>
+                          <td>Contract 1</td>
+                          <td>
+                            <select name="work-order">
+                              <option value="Work Order 1">Work Order 1</option>
+                              <option value="Work Order 2">Work Order 2</option>
+                              <option value="Work Order 3">Work Order 3</option>
+                              <option value="Work Order 4">Work Order 4</option>
+                            </select>
+                          </td>
+                          <td>
+                            1/11/2018 - 29/11/2019
+                          </td>
+                          <td>
+                            <select name="measure-group" id="">
+                              <option value="refrigerator">Refrigerator</option>
+                              <option value="fan">Fan</option>
+                              <option value="bulb">Bulb</option>
+                              <option value="geyser">Geyser</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row bottom-section">
+                <div class="col-12">
+                  <div class="list-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Select</th>
+                          <th scope="col">Address</th>
+                          <th scope="col">Measure Name</th>
+                          <th scope="col">Measure Qty</th>
+                          <th scope="col">Measure Total Cost</th>
+                          <th scope="col">Measure Estimate Cost</th>
+                          <th scope="col">Audit Date</th>
+                          <th scope="col">Work Order Date</th>
+                          <th scope="col">Install Date</th>
+                          <th scope="col">Inspection Date</th>
+                          <th scope="col">Contract</th>
+                          <th scope="col">Invoice Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" checked="true">
+                          </th>
+                          <td>Address 1</td>
+                          <td>Measure 1</td>
+                          <td>100</td>
+                          <td>$210</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox">
+                          </th>
+                          <td>Address 2</td>
+                          <td>Measure 2</td>
+                          <td>120</td>
+                          <td>$220</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox">
+                          </th>
+                          <td>Address 3</td>
+                          <td>Measure 3</td>
+                          <td>130</td>
+                          <td>$230</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox">
+                          </th>
+                          <td>Address 4</td>
+                          <td>Measure 4</td>
+                          <td>400</td>
+                          <td>$240</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Cost" id="cost_tab">
+            <ng-template ngbTabContent>
+              <div class="cost-innerTabs">
+                <ngb-tabset>
+                  <ngb-tab title="Estimate" id="estimate_tab">
+                    <ng-template ngbTabContent>
+                      <p>Estimates</p>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Default" id="default_tab">
+                    <ng-template ngbTabContent>
+                      <p>Default</p>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Measure Total" id="measureTotal_tab">
+                    <ng-template ngbTabContent>
+                      <p>Estimates</p>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Measure Unit" id="measureUnit_tab">
+                    <ng-template ngbTabContent>
+                      <p>Measure Units</p>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Material/Labor Total" id="laborTotal_tab">
+                    <ng-template ngbTabContent>
+                      <div class="row button-section">
+                        <div class="col-12">
+                          <div class="add-delete">
+                            <button type="button" class="btn btn-warning btn-delete">Set Default Price</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row middle-section">
+                        <div class="col-12">
+                          <div class="client-table">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Client Name</th>
+                                  <th scope="col">Contract Name</th>
+                                  <th scope="col">Date Type</th>
+                                  <th scope="col">Date Range</th>
+                                  <th scope="col">Measure Group</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Client AAA</th>
+                                  <td>Contract 1</td>
+                                  <td>
+                                    <select name="work-order">
+                                      <option value="Work Order 1">Work Order 1</option>
+                                      <option value="Work Order 2">Work Order 2</option>
+                                      <option value="Work Order 3">Work Order 3</option>
+                                      <option value="Work Order 4">Work Order 4</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    1/11/2018 - 29/11/2019
+                                  </td>
+                                  <td>
+                                    <select name="measure-group" id="">
+                                      <option value="refrigerator">Refrigerator</option>
+                                      <option value="fan">Fan</option>
+                                      <option value="bulb">Bulb</option>
+                                      <option value="geyser">Geyser</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row bottom-section">
+                        <div class="col-12">
+                          <div class="list-table">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Client Name</th>
+                                  <th scope="col">Measure Name</th>
+                                  <th scope="col">Measure Estimate Cost</th>
+                                  <th scope="col">Material Total</th>
+                                  <th scope="col">Labor Total</th>
+                                  <th scope="col">Measure Total Cost</th>
+                                  <th scope="col">Work Order Date</th>
+                                  <th scope="col">Contract</th>
+                                  <th scope="col">Comment</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">
+                                    Client 1
+                                  </th>
+                                  <td>Measure 1</td>
+                                  <td>$200</td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="materialTotal1" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="laborTotal1" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    <span>{{grandTotal1}}</span>
+                                  </td>
+                                  <td>-</td>
+                                  <td>-</td>
+                                  <td>...</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    Client 2
+                                  </th>
+                                  <td>Measure 2</td>
+                                  <td>$240</td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="materialTotal2" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="laborTotal2" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    <span>{{grandTotal2}}</span>
+                                  </td>
+                                  <td>-</td>
+                                  <td>-</td>
+                                  <td>...</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    Client 3
+                                  </th>
+                                  <td>Measure 3</td>
+                                  <td>$230</td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="materialTotal3" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="laborTotal3" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    <span>{{grandTotal3}}</span>
+                                  </td>
+                                  <td>-</td>
+                                  <td>-</td>
+                                  <td>...</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    Client 4
+                                  </th>
+                                  <td>Measure 4</td>
+                                  <td>$240</td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="materialTotal4" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    $
+                                    <input type="text" [(ngModel)]="laborTotal4" (ngModelChange)="onChange($event)" />
+                                  </td>
+                                  <td>
+                                    <span>{{grandTotal4}}</span>
+                                  </td>
+                                  <td>-</td>
+                                  <td>-</td>
+                                  <td>...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                </ngb-tabset>
+              </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Work Order" id="workOrder_tab">
+            <ng-template ngbTabContent>
+              <div class="row button-section">
+                <div class="col-12">
+                  <div class="add-delete">
+                    <button type="button" class="btn btn-warning">Set</button>
+                    <button type="button" class="btn btn-success btn-delete">Save</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row secondary-button-section">
+                <div class="col-12">
+                  <div class="add-delete">
+                    <select name="vendor">
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                      <option value="Vendor 4">Vendor 4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row middle-section">
+                <div class="col-12">
+                  <div class="client-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Client Name</th>
+                          <th scope="col">Contract Name</th>
+                          <th scope="col">Date Type</th>
+                          <th scope="col">Date Range</th>
+                          <th scope="col">Measure Group</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Client AAA</th>
+                          <td>Contract 1</td>
+                          <td>
+                            <select name="work-order">
+                              <option value="Work Order 1">Work Order 1</option>
+                              <option value="Work Order 2">Work Order 2</option>
+                              <option value="Work Order 3">Work Order 3</option>
+                              <option value="Work Order 4">Work Order 4</option>
+                            </select>
+                          </td>
+                          <td>
+                            1/11/2018 - 29/11/2019
+                          </td>
+                          <td>
+                            <select name="measure-group" id="">
+                              <option value="refrigerator">Refrigerator</option>
+                              <option value="fan">Fan</option>
+                              <option value="bulb">Bulb</option>
+                              <option value="geyser">Geyser</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row bottom-section">
+                <div class="col-12">
+                  <div class="list-table">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                            <th scope="col">Measure Name</th>
+                            <th scope="col">Measure Qty</th>
+                            <th scope="col">Measure Total Cost</th>
+                            <th scope="col">Measure Estimate Cost</th>
+                            <th scope="col">Vendor</th>
+                            <th scope="col">Work Order Date</th>
+                            <th scope="col">Inspection Date</th>
+                            <th scope="col">Invoice Date</th>
+                            <th scope="col">Comment</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            Measure 1
+                          </th>
+                          <td>100</td>
+                          <td>$210</td>
+                          <td>
+                            <input type="text" />
+                          </td>
+                          <td>
+                            <input type="text" />
+                          </td>
+                          <td>
+                              <input type="text" />
+                          </td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Measure 2
+                              </th>
+                              <td>120</td>
+                              <td>$240</td>
+                              <td>
+                                <input type="text" />
+                              </td>
+                              <td>
+                                <input type="text" />
+                              </td>
+                              <td>
+                                  <input type="text" />
+                              </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>...</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Measure 3
+                              </th>
+                              <td>140</td>
+                              <td>$240</td>
+                              <td>
+                                <input type="text" />
+                              </td>
+                              <td>
+                                <input type="text" />
+                              </td>
+                              <td>
+                                  <input type="text" />
+                              </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>...</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Measure 4
+                              </th>
+                              <td>160</td>
+                              <td>$270</td>
+                              <td>
+                                <input type="text" />
+                              </td>
+                              <td>
+                                <input type="text" />
+                              </td>
+                              <td>
+                                  <input type="text" />
+                              </td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>...</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Install" id="install_tab">
+            <ng-template ngbTabContent>
+                <div class="row button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-primary">Set Date</button>
+                        <button type="button" class="btn btn-warning btn-delete">Add</button>
+                        <button type="button" class="btn btn-success btn-delete">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row secondary-button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-info">Default Date</button>
+                        <select name="vendor btn-delete">
+                          <option value="Vendor 1">Vendor 1</option>
+                          <option value="Vendor 2">Vendor 2</option>
+                          <option value="Vendor 3">Vendor 3</option>
+                          <option value="Vendor 4">Vendor 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row middle-section middle-section-padding">
+                    <div class="col-12">
+                      <div class="client-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Client Name</th>
+                              <th scope="col">Contract Name</th>
+                              <th scope="col">Date Type</th>
+                              <th scope="col">Date Range</th>
+                              <th scope="col">Measure Group</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Client AAA</th>
+                              <td>Contract 1</td>
+                              <td>
+                                <select name="work-order">
+                                  <option value="Work Order 1">Work Order 1</option>
+                                  <option value="Work Order 2">Work Order 2</option>
+                                  <option value="Work Order 3">Work Order 3</option>
+                                  <option value="Work Order 4">Work Order 4</option>
+                                </select>
+                              </td>
+                              <td>
+                                1/11/2018 - 29/11/2019
+                              </td>
+                              <td>
+                                <select name="measure-group" id="">
+                                  <option value="refrigerator">Refrigerator</option>
+                                  <option value="fan">Fan</option>
+                                  <option value="bulb">Bulb</option>
+                                  <option value="geyser">Geyser</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="row bottom-section">
+                    <div class="col-12">
+                      <div class="list-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                                <th scope="col">Select</th>
+                                <th scope="col">Measure Name</th>
+                                <th scope="col">Measure Qty</th>
+                                <th scope="col">Measure Total Cost</th>
+                                <th scope="col">Measure Estimate Cost</th>
+                                <th scope="col">Work Order Vendor</th>
+                                <th scope="col">Work Order Date</th>
+                                <th scope="col">Install Date</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                  <input type="checkbox" checked="true">
+                              </th>
+                              <td>Measure 1</td>
+                              <td>100</td>
+                              <td>
+                                $210
+                              </td>
+                              <td>
+                                -
+                              </td>
+                              <td>
+                                -
+                              </td>
+                              <td>-</td>
+                              <td>
+                                <input type="text" />
+                              </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input type="checkbox">
+                                </th>
+                                <td>Measure 2</td>
+                                <td>130</td>
+                                <td>
+                                  $250
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                                <td>-</td>
+                                <td>
+                                  <input type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input type="checkbox">
+                                </th>
+                                <td>Measure 3</td>
+                                <td>150</td>
+                                <td>
+                                  $260
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                                <td>-</td>
+                                <td>
+                                  <input type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input type="checkbox">
+                                </th>
+                                <td>Measure 4</td>
+                                <td>180</td>
+                                <td>
+                                  $290
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                                <td>-</td>
+                                <td>
+                                  <input type="text" />
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Inspection" id="inspection_tab">
+            <ng-template ngbTabContent>
+                <div class="row button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-primary">Set Date</button>
+                        <button type="button" class="btn btn-warning btn-delete">Add</button>
+                        <button type="button" class="btn btn-success btn-delete">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row secondary-button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-info">Default Date</button>
+                        <select name="vendor btn-delete">
+                          <option value="Inspector 1">Inspector 1</option>
+                          <option value="Inspector 2">Inspector 2</option>
+                          <option value="Inspector 3">Inspector 3</option>
+                          <option value="Inspector 4">Inspector 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row middle-section middle-section-padding">
+                    <div class="col-12">
+                      <div class="client-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Client Name</th>
+                              <th scope="col">Contract Name</th>
+                              <th scope="col">Date Type</th>
+                              <th scope="col">Date Range</th>
+                              <th scope="col">Measure Group</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Client AAA</th>
+                              <td>Contract 1</td>
+                              <td>
+                                <select name="work-order">
+                                  <option value="Work Order 1">Work Order 1</option>
+                                  <option value="Work Order 2">Work Order 2</option>
+                                  <option value="Work Order 3">Work Order 3</option>
+                                  <option value="Work Order 4">Work Order 4</option>
+                                </select>
+                              </td>
+                              <td>
+                                1/11/2018 - 29/11/2019
+                              </td>
+                              <td>
+                                <select name="measure-group" id="">
+                                  <option value="refrigerator">Refrigerator</option>
+                                  <option value="fan">Fan</option>
+                                  <option value="bulb">Bulb</option>
+                                  <option value="geyser">Geyser</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="row bottom-section">
+                    <div class="col-12">
+                      <div class="list-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                                <th scope="col">Select</th>
+                                <th scope="col">Measure Name</th>
+                                <th scope="col">Measure Qty</th>
+                                <th scope="col">Work Order Vendor</th>
+                                <th scope="col">Work Order Date</th>
+                                <th scope="col">Inspector</th>
+                                <th scope="col">Inspection Date</th>
+                                <th scope="col">Pass</th>
+                                <th scope="col">Comment</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                  <input type="checkbox" checked="true">
+                              </th>
+                              <td>Measure 1</td>
+                              <td>100</td>
+                              <td>
+                               <input type="text" />
+                              </td>
+                              <td>
+                                  <input type="text" />
+                              </td>
+                              <td>
+                                  <input type="text" />
+                              </td>
+                              <td>
+                                  <input type="text" />
+                              </td>
+                              <td>
+                                Yes
+                              </td>
+                              <td>...</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input type="checkbox">
+                                </th>
+                                <td>Measure 2</td>
+                                <td>120</td>
+                                <td>
+                                 <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                  No
+                                </td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input type="checkbox">
+                                </th>
+                                <td>Measure 3</td>
+                                <td>130</td>
+                                <td>
+                                 <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                  Yes
+                                </td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input type="checkbox">
+                                </th>
+                                <td>Measure 4</td>
+                                <td>140</td>
+                                <td>
+                                 <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                  Yes
+                                </td>
+                                <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Invoicing" id="invoicing_tab">
+            <ng-template ngbTabContent>
+                <div class="row button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-primary">Default Contract</button>
+                        <button type="button" class="btn btn-warning btn-delete">Set</button>
+                        <button type="button" class="btn btn-success btn-delete">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row secondary-button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-info">Default Date</button>
+                        <button type="button" class="btn btn-light btn-delete">Invoice Number</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row middle-section middle-section-padding">
+                    <div class="col-12">
+                      <div class="client-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Client Name</th>
+                              <th scope="col">Contract Name</th>
+                              <th scope="col">Date Type</th>
+                              <th scope="col">Date Range</th>
+                              <th scope="col">Measure Group</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Client AAA</th>
+                              <td>Contract 1</td>
+                              <td>
+                                <select name="work-order">
+                                  <option value="Work Order 1">Work Order 1</option>
+                                  <option value="Work Order 2">Work Order 2</option>
+                                  <option value="Work Order 3">Work Order 3</option>
+                                  <option value="Work Order 4">Work Order 4</option>
+                                </select>
+                              </td>
+                              <td>
+                                1/11/2018 - 29/11/2019
+                              </td>
+                              <td>
+                                <select name="measure-group" id="">
+                                  <option value="refrigerator">Refrigerator</option>
+                                  <option value="fan">Fan</option>
+                                  <option value="bulb">Bulb</option>
+                                  <option value="geyser">Geyser</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="row bottom-section">
+                    <div class="col-12">
+                      <div class="list-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                                <th scope="col">Measure Name</th>
+                                <th scope="col">Measure Qty</th>
+                                <th scope="col">Measure Estimate Cost</th>
+                                <th scope="col">Measure Cost</th>
+                                <th scope="col">Invoice Date</th>
+                                <th scope="col">Contract 1</th>
+                                <th scope="col">Contract 2</th>
+                                <th scope="col">Contract 3</th>
+                                <th scope="col">Comment</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Measure 1</td>
+                              <td>100</td>
+                              <td>
+                               $5000
+                              </td>
+                              <td>
+                                $5300
+                              </td>
+                              <td>
+                                  <input type="text" placeholder="2/20/2018"/>
+                              </td>
+                              <td>
+                                  <input type="text" placeholder="$2000"/>
+                              </td>
+                              <td>
+                                  <input type="text" placeholder="$2000"/>
+                              </td>
+                              <td>
+                                  <input type="text" placeholder="$1300"/>
+                              </td>
+                              <td>...</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Measure 2</td>
+                                <td>130</td>
+                                <td>
+                                 $6000
+                                </td>
+                                <td>
+                                  $6300
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="2/20/2018"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$1000"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$1000"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$1200"/>
+                                </td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Measure 3</td>
+                                <td>150</td>
+                                <td>
+                                 $7000
+                                </td>
+                                <td>
+                                  $4300
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="2/20/2018"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$8000"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$8000"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$9300"/>
+                                </td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Measure 4</td>
+                                <td>600</td>
+                                <td>
+                                 $6000
+                                </td>
+                                <td>
+                                  $4300
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="2/20/2018"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$4000"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$4000"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="$9300"/>
+                                </td>
+                                <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Payment" id="payment_tab">
+            <ng-template ngbTabContent>
+                <div class="row button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-warning btn-delete">Set</button>
+                        <button type="button" class="btn btn-success btn-delete">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row secondary-button-section">
+                    <div class="col-12">
+                      <div class="add-delete">
+                        <button type="button" class="btn btn-info">Default Date</button>
+                        <button type="button" class="btn btn-light btn-delete">Payment Number</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row middle-section middle-section-padding">
+                    <div class="col-12">
+                      <div class="client-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Client Name</th>
+                              <th scope="col">Contract Name</th>
+                              <th scope="col">Date Type</th>
+                              <th scope="col">Date Range</th>
+                              <th scope="col">Measure Group</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Client AAA</th>
+                              <td>Contract 1</td>
+                              <td>
+                                <select name="work-order">
+                                  <option value="Work Order 1">Work Order 1</option>
+                                  <option value="Work Order 2">Work Order 2</option>
+                                  <option value="Work Order 3">Work Order 3</option>
+                                  <option value="Work Order 4">Work Order 4</option>
+                                </select>
+                              </td>
+                              <td>
+                                1/11/2018 - 29/11/2019
+                              </td>
+                              <td>
+                                <select name="measure-group" id="">
+                                  <option value="refrigerator">Refrigerator</option>
+                                  <option value="fan">Fan</option>
+                                  <option value="bulb">Bulb</option>
+                                  <option value="geyser">Geyser</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="row bottom-section">
+                    <div class="col-12">
+                      <div class="list-table">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                                <th scope="col">Measure Name</th>
+                                <th scope="col">Measure Qty</th>
+                                <th scope="col">Measure Estimate Cost</th>
+                                <th scope="col">Measure Cost</th>
+                                <th scope="col">Invoice Date</th>
+                                <th scope="col">Contract 1</th>
+                                <th scope="col">Contract 2</th>
+                                <th scope="col">Payment Date</th>
+                                <th scope="col">Payment Number</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">Measure 1</td>
+                              <td>100</td>
+                              <td>
+                               $5000
+                              </td>
+                              <td>
+                                $5300
+                              </td>
+                              <td>
+                                  2/20/2018
+                              </td>
+                              <td>
+                                  $2000
+                              </td>
+                              <td>
+                                  $2000
+                              </td>
+                              <td>
+                                  <input type="text" placeholder="2/20/2018"/>
+                              </td>
+                              <td>
+                                <input type="text" placeholder="123456">
+                              </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Measure 2</td>
+                                <td>130</td>
+                                <td>
+                                 $6000
+                                </td>
+                                <td>
+                                  $6300
+                                </td>
+                                <td>
+                                    2/20/2018
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="2/20/2018"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="1256">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Measure 3</td>
+                                <td>150</td>
+                                <td>
+                                 $7000
+                                </td>
+                                <td>
+                                  $4300
+                                </td>
+                                <td>
+                                    2/20/2018
+                                </td>
+                                <td>
+                                    $8000
+                                </td>
+                                <td>
+                                    $8000
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="2/20/2018"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="3456">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Measure 4</td>
+                                <td>600</td>
+                                <td>
+                                 $6000
+                                </td>
+                                <td>
+                                  $4300
+                                </td>
+                                <td>
+                                    2/20/2018
+                                </td>
+                                <td>
+                                    $4000"
+                                </td>
+                                <td>
+                                    $4000
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="2/20/2018"/>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="9300"/>
+                                </td>
+                                <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            </ng-template>
+          </ngb-tab>
+        </ngb-tabset>
+      </div>
+    </div>
+  </div>
+</div>

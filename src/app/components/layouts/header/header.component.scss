@@ -1,0 +1,27 @@
+.navigation-bar {
+    background: linear-gradient(to right, #007b5e, #ffffff);
+    .search-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -25px;
+    }
+    .img-logo {
+        width: 7rem;
+    }
+    .header-items {
+        color: #000000;
+    }
+    .navbar-brand {
+        margin-right: 2rem;
+    }
+    .nav-item  {
+        padding: 0 1rem;
+        margin-right: 1rem;
+        &.active {
+            background: #ffffff;
+            border-radius: 10px;
+        }
+    }
+}

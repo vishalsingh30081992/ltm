@@ -1,0 +1,67 @@
+.home-container {
+    background: #007b5e;
+    .top-section {
+        .header-container {
+            .navigation-tabs {
+
+                .button-section {
+                    position: absolute;
+                    right: 45px;
+                    top: 10px;
+                    .add-delete {
+                        .btn-delete {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+
+                .secondary-button-section {
+                    position: absolute;
+                    right: 45px;
+                    top: 57px;
+                    .add-delete {
+                        .btn-delete {
+                            margin-left: 1rem;
+                        }
+                    }
+                    select {
+                        width: 8.5rem;
+                        height: 2.4rem;
+                        border-radius: 0.3rem;
+                        color: #212529;
+                        background-color: #e0a800;
+                        border-color: #d39e00;
+                        margin-left: 1rem;
+                    }
+                }
+
+                .middle-section {
+                    padding: 4rem 0;
+                    .client-table {
+                        padding: 0 15px;
+                        .table td, .table th {
+                            font-size: 12px;
+                            border-bottom: 1px solid #dee2e6;
+                        }
+                        select {
+                            height: 30px;
+                        }
+                    }
+                    &.middle-section-padding {
+                        padding: 4.5rem 0;
+                    }
+                }
+            
+                .bottom-section {
+                    .list-table {
+                        padding: 0 15px;
+                    }
+                    .table td, .table th {
+                        font-size: 12px;
+                        border-bottom: 1px solid #dee2e6;
+                    }
+                }
+            }
+        }
+    }
+}
