@@ -1,2 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
 @import './variables';
 @import './mixins';
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html, body {
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+  }
+
+.app-container, .page-container {
+    height: 100%;
+}
+
+/**
+* Nav Tabs css -- ng-bootstrap ngb-tabset issue
+*/
+.navigation-tabs {
+    .nav-tabs {
+        width: 67%;
+        margin: 0 15px;
+        .nav-item {
+            .nav-link {
+                border: 1px solid transparent;
+                border-top-left-radius: .25rem;
+                border-top-right-radius: .25rem;
+                color: #eee;
+                font-size: 15px;
+                cursor: pointer;
+                padding: 0.5rem 2rem;
+                &.active {
+                    color: #f3f3f3;
+                    background-color: transparent;
+                    border-color: transparent transparent #f3f3f3;
+                    border-bottom: 4px solid !important;
+                }
+            }
+        }
+    }
+}
